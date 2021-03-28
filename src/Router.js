@@ -29,9 +29,19 @@ export default function Router() {
         tabBarOptions={{
           activeTintColor: 'tomato',
           inactiveTintColor: 'gray',
+          tabStyle: {},
+          style: {zIndex: -11},
         }}>
-        <Tab.Screen name="Home" component={HomeScreen} />
-        <Tab.Screen name="Customers" component={CustumersScreen} />
+        <Tab.Screen
+          name="Home"
+          component={HomeScreen}
+          options={{tabBarBadge: 3}}
+        />
+        <Tab.Screen
+          name="Customers"
+          component={CustumersScreen}
+          options={{tabBarBadge: 3}}
+        />
       </Tab.Navigator>
     </NavigationContainer>
   );

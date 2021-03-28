@@ -3,6 +3,7 @@ import {View, Text, SafeAreaView} from 'react-native';
 import {customers} from '../styles';
 
 export default function SettingsScreen() {
+  console.log('CustomerScreen render');
   return (
     <SafeAreaView style={customers.container}>
       <View style={customers.content}>
