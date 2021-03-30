@@ -2,12 +2,9 @@ import {Dimensions, StyleSheet} from 'react-native';
 
 export const home = StyleSheet.create({
   container: {
-    backgroundColor: '#ece',
+    backgroundColor: '#ffffee',
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
   },
-
   modal: {
     flex: 1,
     padding: 10,
@@ -30,15 +27,15 @@ export const customers = StyleSheet.create({
 
 export const card = StyleSheet.create({
   container: {
-    backgroundColor: '#ffc',
-    width: Dimensions.get('window').width / 3,
-    height: Dimensions.get('window').width / 3,
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderRadius: 10,
-    borderColor: '#ccc',
+    backgroundColor: '#ffccbc',
+    padding: 10,
+    margin: 10,
+    borderColor: '#cb9b8c',
     borderWidth: 2,
+    borderRadius: 20,
+    width: Dimensions.get('window').width / 2,
   },
+  img: {},
 });
 
 export const button = StyleSheet.create({
@@ -49,6 +46,8 @@ export const button = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: 10,
+    alignSelf: 'center',
+    width: 300,
   },
   text: {
     fontSize: 20,
@@ -59,11 +58,11 @@ export const input = StyleSheet.create({
   container: {
     padding: 20,
     margin: 10,
-    backgroundColor: '#ffffff95',
+    backgroundColor: '#bdb9b7',
     borderRadius: 10,
   },
   text: {
-    color: '#000',
+    color: '#ffffff',
     fontSize: 18,
   },
 });

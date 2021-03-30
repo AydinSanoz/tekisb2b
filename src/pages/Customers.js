@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {View, Text, SafeAreaView} from 'react-native';
+import {View, Text, SafeAreaView, TextInput} from 'react-native';
 import {customers} from '../styles';
 
 export default function SettingsScreen() {
@@ -8,6 +8,7 @@ export default function SettingsScreen() {
     <SafeAreaView style={customers.container}>
       <View style={customers.content}>
         <Text>Customers!</Text>
+        <TextInput placeholder="search" />
       </View>
     </SafeAreaView>
   );

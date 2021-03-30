@@ -10,7 +10,7 @@ import {input} from '../styles';
 export function Signup({setModalVisible}) {
   return (
     <Formik
-      initialValues={{fname: '', lname: '', email: '', password: ''}}
+      initialValues={{email: '', password: ''}}
       onSubmit={values => {
         console.log(values);
         setModalVisible(false);
@@ -21,23 +21,6 @@ export function Signup({setModalVisible}) {
             name="ios-reorder-three"
             size={30}
             style={{textAlign: 'center'}}
-          />
-
-          <TextInput
-            style={input.container}
-            placeholder="Enter firstName"
-            keyboardType="default"
-            onChangeText={handleChange('fname')}
-            onBlur={handleBlur('fname')}
-            value={values.fname}
-          />
-          <TextInput
-            style={input.container}
-            placeholder="Enter lastName"
-            keyboardType="default"
-            onChangeText={handleChange('lname')}
-            onBlur={handleBlur('lname')}
-            value={values.lname}
           />
           <TextInput
             style={input.container}
